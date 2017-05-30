@@ -10,3 +10,10 @@ Load movies with promise and whatwg
 node_modules/.bin/typings uninstall es6-shim --save --global
 node_modules/.bin/typings install dt~whatwg-streams --save --global
 node_modules/.bin/typings install dt~whatwg-fetch --save --global
+
+Following along with Scott Allen on PluralSight
+
+https://app.pluralsight.com/library/courses/reactive-programming-rxjs-getting-started/table-of-contents
+
+github repo: https://github.com/nojaf/rxjs-sallen
+
