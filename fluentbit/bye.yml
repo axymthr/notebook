@@ -1,0 +1,11 @@
+kind: Pod
+apiVersion: v1
+metadata:
+  name: bye-pod
+  annotations:
+      purpose: goodbye
+spec:
+  containers:
+    - image: bye:latest
+      name: bye-container
+      imagePullPolicy: Never

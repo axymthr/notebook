@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: hello-pod
+  annotations:
+      purpose: greeting
+spec:
+  containers:
+    - image: hello:latest
+      name: hello-container
+      imagePullPolicy: Never
