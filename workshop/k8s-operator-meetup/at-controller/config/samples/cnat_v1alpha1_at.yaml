@@ -1,0 +1,9 @@
+apiVersion: cnat.awkshwayrd.dev/v1alpha1
+kind: At
+metadata:
+  name: at-sample
+spec:
+  # Add fields here
+  schedule: "2021-03-27T13:00:00Z"
+  command: "echo hello kubernetes!"
+
