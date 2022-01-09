@@ -1,3 +1,4 @@
+#![warn(clippy::all, clippy::pedantic)]
 use std::io::stdin;
 
 fn what_is_your_name() -> String {
@@ -9,22 +10,32 @@ fn what_is_your_name() -> String {
 }
 
 fn main() {
-    println!("Hello, what's your name?");
-    let name = what_is_your_name();
-    println!("Hello, {:?}", name);
-    let visitor_list = [
+    let mut visitor_list = vec![
         Visitor::new("bert", "Hello Bert, enjoy your treehouse."),
         Visitor::new("steve", "Hi Steve. Your milk is in the fridge."),
         Visitor::new("fred", "Wow, who invited Fred?"),
     ];
+    loop {
+        println!("Hello, what's your name? (Leave empty and press ENTER to quit)");
+        let name = what_is_your_name();
+        if name.is_empty() {
+            break;
+        }
 
-    let known_visitor = visitor_list.iter().find(|visitor| visitor.name == name);
-    match known_visitor {
-        Some(visitor) => visitor.greet_visitor(),
-        None => println!("You are not on the visitor list. Please leave."),
+        let known_visitor = visitor_list.iter().find(|visitor| visitor.name == name);
+        match known_visitor {
+            Some(visitor) => visitor.greet_visitor(),
+            None => {
+                println!("{} is not on the visitor list.", name);
+                visitor_list.push(Visitor::new(&name, "New friend"));
+            }
+        }
     }
+    println!("The final list of visitors:");
+    println!("{:#?}", visitor_list);
 }
 
+#[derive(Debug)]
 struct Visitor {
     name: String,
     greeting: String,
