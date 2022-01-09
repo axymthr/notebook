@@ -1,5 +1,127 @@
 # O'reilly course notes
 
+#### Live - Building a Kubernetes Operator: Extending Kubernetes to Fit Your Applications
+
+https://github.com/brentlaster/safaridocs/blob/master/k8s-op-setup.pdf
+
+https://bclconf.s3-us-west-2.amazonaws.com/k8s-op.ova
+
+https://www.dropbox.com/s/konq5fctnalu9lz/k8s-op.ova?dl=0
+
+#### Live - Go Superstream
+
+[Port scanning examples to teach Go concurrency bounding](https://github.com/jboursiquot/portscan)
+
+[Go bridge](https://github.com/gobridge/about-us/blob/master/README.md)
+
+#### Live - Creating Data-Intensive Applications
+
+https://hub.gke2.mybinder.org/user/gizm00-strata_2021-n4yih53m/tree
+
+https://github.com/chriscardillo/gusty
+
+https://github.com/gizm00/strata_2021
+
+https://minimaxir.com/2021/04/styleclip/
+
+Cloned https://resources.oreilly.com/binderhub/strata-data-superstream-prototype-to-pipeline
+
+#### Live - Structural Design Patterns appliedin Spring
+
+https://github.com/victorrentea/structural-patterns-spring
+
+#### Live - Continuous Delivery in Kubernetes with ArgoCD
+
+https://github.com/skilldocs/gitops
+
+https://github.com/brentlaster/safaridocs/blob/main/vbtroubleshoot.pdf
+
+https://github.com/skilldocs/gitops/blob/main/gitops-labs.pdf
+
+https://github.com/skilldocs/gitops/blob/main/gitops-setup.pdf
+
+Argocd login admin/admin
+
+#### Live - Building a Kubernetes Operator: Extending Kubernetes to Fit Your Applications
+
+https://github.com/brentlaster/conf/blob/master/vbtroubleshoot.pdf
+
+https://github.com/skilldocs/k8s-op/blob/main/k8s-op-labs.pdf
+
+https://github.com/skilldocs/k8s-op/blob/main/k8s-op-setup.pdf
+
+#### Live - Implementing an Edge Computing Apache Kafka Inference Engine: Effective Data Pipelines
+
+https://www.clustermonkey.net/scalable-analytics/doku.php class notes here
+
+#### Live - Mastering threads
+
+Thread Blocked state only shows when using synchronised to get moitor lock not for the Lock classes
+
+Waiting is used during e.g. RenetrantLock
+
+Wait is used when waiting for some condition so you give up the lock on the monitor object
+
+Prefer notifyAll() over notify()
+
+`while(!precondition) lock.wait();`
+
+Lock.wait() doesn't complete until it reacquires the lock
+
+#### Live - Fundamentals of Learning: Learn faster and better using neuroscience
+
+###### Menmonic for learning
+
+**I asked**  *quiz self*
+
+**for a mixed-** *Mix different material*
+
+**up**  *Go to diffuse, back to focus, then diffuse etc.*
+
+**nap break** *Take lots of naps and breaks to cement learning*
+
+**at several Starbucks** *different venues*
+
+**associations**  *connect material with as many associations as possible*
+
+It is normal for your brain to throw information away fter a trial period. So **Don't cram!**
+
+Pre-test *before* you start learning
+
+Focus - what exactly is this thing in front of me? Diffuse - What's going on here in general?
+
+It is very imp. to switch between the 2. Use diffuse to determine what to focus on.
+
+Procrastination is good if you use it to iterate but finish before the deadline. *Start early and finish late.*
+
+Any way to show facts in positive light for listeners will greatly help acceptance.
+
+#### Live - Negotiation fundamentals
+
+http://amchron.com
+
+https://www.pbs.org/newshour/show/author-successful-negotiation-hinges-on-tone-language-word-choice
+
+#### Live - Data Science for Engineers
+
+https://resources.oreilly.com/binderhub/data-science-for-engineers
+
+TODO: Jupyter notebook cloned, push to private repo
+
+#### Live - Intermediate SQL for data analysis
+
+https://github.com/thomasnield/oreilly_intermediate_sql_for_data
+
+#### Live - Business data analytics using Python
+
+https://learning.oreilly.com/jupyter-notebooks/business-data-analytics/9781492063032/
+
+https://resources.oreilly.com/binderhub/business-data-analytics-using-python
+
+TODO: Jupyter notebook cloned, push to private repo
+
+https://ot-proxy.binderhub-prod.gcp.oreilly.com/user/binderhub-busin-cs-using-python-opbsjo21/tree
+
 #### Hands-On Algorithmic Trading with Python
 
 https://resources.oreilly.com/learning-paths/hands-on-algorithmic-trading-with-python/blob/master/README.md
@@ -140,7 +262,13 @@ Matplotlib is a data visualization library for Python that can be used to visual
 
 Matplotlib offers quiver plot to plot vectors. Quiver plot accepts the location and directions of the vectors as its parameters.
 
+#### Interactive - Kubernetes Containers: Go Apps in Containers on Kubernetes
 
+https://github.com/javajon/go-examples progress to a  Go microservice-based application
+
+#### Interactive - Kubernetes Observability: Logging with EFK
+
+https://github.com/chentex/random-logger
 
 #### Live - Building and Managing Kubernetes Applications
 
