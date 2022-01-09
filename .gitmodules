@@ -1,3 +1,6 @@
 [submodule "spring/mbhave-spring-boot-loves-k8s"]
 	path = spring/mbhave-spring-boot-loves-k8s
 	url = git@github.com:mbhave/spring-boot-loves-k8s.git
+[submodule "spring/game-of-streams-aircraft-edition"]
+	path = spring/game-of-streams-aircraft-edition
+	url = git@github.com:mkheck/game-of-streams-aircraft-edition.git
