@@ -1,0 +1,3 @@
+[submodule "spring/mbhave-spring-boot-loves-k8s"]
+	path = spring/mbhave-spring-boot-loves-k8s
+	url = git@github.com:mbhave/spring-boot-loves-k8s.git
