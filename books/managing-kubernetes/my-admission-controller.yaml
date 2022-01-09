@@ -1,0 +1,22 @@
+apiVersion: admissionregistration.k8s.io/v1beta1
+kind: ValidatingWebhookConfiguration
+metadata:
+  name: my-admission-controller
+webhooks:
+- name: my-web-hook
+  rules:
+  # register for create of v1/pod
+  - apiGroups:
+    - ""
+    apiVersions:
+    - v1
+    operations:
+    - CREATE
+    resources:
+    - pods
+  clientConfig:
+    service:
+      # Send requests to a Service named 'my-admission-controller-service'
+      # in the kube-system namespace
+      namespace: kube-system
+      name: my-admission-controller-service
