@@ -1,0 +1,7 @@
+{
+  "name": "test-anything",
+  "version": "0.0.1",
+  "dependencies": {
+    "tape": "^4.0.0"
+  }
+}
