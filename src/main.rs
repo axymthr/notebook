@@ -115,6 +115,37 @@ impl GameState for State {
     }
 }
 
+struct Obstacle {
+    x: i32,
+    gap_y: i32,
+    size: i32,
+}
+
+impl Obstacle {
+    fn new(x: i32, score: i32) -> Self {
+        let mut random = RandomNumberGenerator::new();
+        Obstacle {
+            x,
+            gap_y: random.range(10, 40),
+            size: i32::max(2, 20 - score),
+        }
+    }
+    fn render(&mut self, ctx: &mut BTerm, player_x: i32) {
+        let screen_x = self.x - player.x;
+        let half_size = self.size / 2;
+
+        //Draw the top half of the obstacle
+        for y in 0..self.gap_y - half_size {
+            ctx.set(screen_x, y, RED, BLACK, to_cp437('|'));
+        }
+
+        //Draw the bottom half of the obstacle
+        for y  in self.gap_y + half_size..SCREEN_HEIGHT {
+            ctx.set(screen_x, y, RED, BLACK, to_cp437('|'));
+        }
+    }
+}
+
 fn main() -> BError {
     let context = BTermBuilder::simple80x50()
         .with_title("Flappy Dragon")
