@@ -7,3 +7,15 @@
 [submodule "edx/kubernetes-serverless/echo-fn"]
 	path = edx/kubernetes-serverless/echo-fn
 	url = git@github.com:alexellis/echo-fn
+[submodule "oreilly/data-science-for-engineers"]
+	path = oreilly/data-science-for-engineers
+	url = https://resources.oreilly.com/binderhub/data-science-for-engineers.git
+[submodule "oreilly/hands-on-algorithmic-trading-with-python"]
+	path = oreilly/hands-on-algorithmic-trading-with-python
+	url = https://resources.oreilly.com/learning-paths/hands-on-algorithmic-trading-with-python.git
+[submodule "oreilly/strata-data-superstream-prototype-to-pipeline"]
+	path = oreilly/strata-data-superstream-prototype-to-pipeline
+	url = https://resources.oreilly.com/binderhub/strata-data-superstream-prototype-to-pipeline.git
+[submodule "oreilly/structural-patterns-spring"]
+	path = oreilly/structural-patterns-spring
+	url = git@github.com:victorrentea/structural-patterns-spring.git
