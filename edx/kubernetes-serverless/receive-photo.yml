@@ -1,0 +1,10 @@
+version: 1.0
+provider:
+  name: openfaas
+  gateway: http://127.0.0.1:8080
+functions:
+  receive-photo:
+    lang: python3-http-debian
+    handler: ./receive-photo
+    image: awkshwayrd/receive-photo:latest
+

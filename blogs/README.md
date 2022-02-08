@@ -28,3 +28,38 @@ export KUBECONFIG=~/code/learn/blogs/multipass-metallb/bonsai/k3s.yaml
 
 ```
 
+# Getting started with Knative
+
+Original post: https://itnext.io/knative-kubernetes-native-paas-with-serverless-a1e0a0612943
+
+deploy Knative-Serving
+deploy Gloo
+
+Let’s create an autoscaling Knative Service (kservice) and route some traffic to it.
+
+```
+apiVersion: serving.knative.dev/v1alpha1
+kind: Service
+metadata:
+ name: helloworld-go
+ namespace: default
+spec:
+ template:
+   spec:
+     containers:
+       - image: gcr.io/knative-samples/helloworld-go
+         env:
+           - name: TARGET
+             Value: Knative user
+```
+
+```
+glooctl proxy url --name knative-external-proxy
+
+```
+
+
+```
+
+kubectl get route knative-app  --output=custom-columns=NAME:.metadata.name,URL:.status.url
+```

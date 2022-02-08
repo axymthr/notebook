@@ -4,3 +4,6 @@
 [submodule "spring/game-of-streams-aircraft-edition"]
 	path = spring/game-of-streams-aircraft-edition
 	url = git@github.com:mkheck/game-of-streams-aircraft-edition.git
+[submodule "edx/kubernetes-serverless/echo-fn"]
+	path = edx/kubernetes-serverless/echo-fn
+	url = git@github.com:alexellis/echo-fn

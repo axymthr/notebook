@@ -1,0 +1,12 @@
+version: 1.0
+provider:
+  name: openfaas
+  gateway: http://127.0.0.1:8080
+environment:
+    RAW_BODY: True  
+functions:
+  http-api:
+    lang: python3-flask-debian
+    handler: ./http-api
+    image: awkshwayrd/http-api:latest
+
