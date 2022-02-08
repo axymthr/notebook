@@ -19,3 +19,6 @@
 [submodule "oreilly/structural-patterns-spring"]
 	path = oreilly/structural-patterns-spring
 	url = git@github.com:victorrentea/structural-patterns-spring.git
+[submodule "certifications/CKA/cka-example-environments"]
+	path = certifications/CKA/cka-example-environments
+	url = git@github.com:wuestkamp/cka-example-environments.git
