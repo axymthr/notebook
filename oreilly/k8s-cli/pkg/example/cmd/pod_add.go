@@ -4,7 +4,9 @@ import (
 	"errors"
 	"fmt"
 	"io"
-
+	apiv1 "k8s.io/api/core/v1"
+	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
+	"github.com/codementor/k8s-cli/pkg/example/env"
 	"github.com/spf13/cobra"
 )
 
@@ -56,6 +58,28 @@ func validateArgs(args []string) error {
 // run returns the errors associated with cmd env
 func (p *podAddCmd) run(name string) error {
 
-	fmt.Printf("adding a pod\n")
+	client := env.NewClientSet(&Settings)
+	podsClient := client.CoreV1().Pods(apiv1.NamespaceDefault)
+	  pod := &apiv1.Pod{
+	  ObjectMeta: metav1.ObjectMeta{
+		Name:   name,
+		Labels: map[string]string{"app": "demo"},
+	  },
+	  Spec: apiv1.PodSpec{
+		Containers: []apiv1.Container{
+		  {
+			Name:  name,
+			Image: p.image,
+		  },
+		},
+	  },
+	}
+	pp, err := podsClient.Create(pod)
+	if err != nil {
+	  return err
+	}
+  
+	fmt.Fprintf(p.out, "Pod %v created with rev: %v\n", pp.Name, pp.ResourceVersion)
+  
 	return nil
 }
