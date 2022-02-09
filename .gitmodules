@@ -22,3 +22,6 @@
 [submodule "certifications/CKA/cka-example-environments"]
 	path = certifications/CKA/cka-example-environments
 	url = git@github.com:wuestkamp/cka-example-environments.git
+[submodule "certifications/CKA/certified-kubernetes-administrator-course"]
+	path = certifications/CKA/certified-kubernetes-administrator-course
+	url = git@github.com:kodekloudhub/certified-kubernetes-administrator-course.git
