@@ -28,3 +28,6 @@
 [submodule "books/reactive-application-development-scala"]
 	path = books/reactive-application-development-scala
 	url = git@github.com:ironfish/reactive-application-development-scala.git
+[submodule "books/ReactiveDesignPatternsCodeSamples"]
+	path = books/ReactiveDesignPatternsCodeSamples
+	url = git@github.com:ReactiveDesignPatterns/CodeSamples.git
