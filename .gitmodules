@@ -25,3 +25,6 @@
 [submodule "certifications/CKA/certified-kubernetes-administrator-course"]
 	path = certifications/CKA/certified-kubernetes-administrator-course
 	url = git@github.com:kodekloudhub/certified-kubernetes-administrator-course.git
+[submodule "books/reactive-application-development-scala"]
+	path = books/reactive-application-development-scala
+	url = git@github.com:ironfish/reactive-application-development-scala.git
