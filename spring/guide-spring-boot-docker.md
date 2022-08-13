@@ -31,7 +31,7 @@ ENTRYPOINT ["java","-jar","/app.jar"]
 ### Docker build commands
 ```shell
 docker build -t springio/spring-docker .
-docker run -p 8080:8080 springio/spring-docker
+docker run -p 8080:8080 axymthr/spring-docker
 ```
 ### Layered Dockerfile with exploded jar
 ```shell
@@ -48,4 +48,22 @@ COPY ${DEPENDENCY}/BOOT-INF/lib /app/lib
 COPY ${DEPENDENCY}/META-INF /app/META-INF
 COPY ${DEPENDENCY}/BOOT-INF/classes /app
 ENTRYPOINT ["java","-cp","app:app/lib/*","com.example.springdocker.SpringDockerApplication"]
+```
+### Build image with Jib
+```
+//build.gradle
+plugins {
+  id 'com.google.cloud.tools.jib' version '3.2.1'
+}
+jib {
+  from {
+    image = 'mcr.microsoft.com/openjdk/jdk:17-ubuntu'
+  }
+  to {
+    image = "axymthr/spring-docker"
+  }
+}
+```
+```shell
+./gradlew jibDockerBuild --image=axymthr/spring-docker
 ```
