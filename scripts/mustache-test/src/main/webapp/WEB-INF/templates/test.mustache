@@ -1,0 +1,42 @@
+<!DOCTYPE>
+<html>
+<head>
+<title>
+	{{title}}
+</title>
+</head>
+<body>
+	
+	{{! comment is written like this - with a bang just after mushes ;) }}
+	
+	<h1>
+		{{name}} is supposed to be awesome!!
+	</h1>
+	
+	{{! block - if something is not available, the block will not be executed }}
+	
+	{{#something}}
+		<h2>{{something}} is here!</h2>
+	{{/something}}
+	
+	
+	{{! How a list can be iterated? the DOT(.) acts as the indexed element }}
+	<ol>
+	{{#lst}}
+		<li>{{.}}</li>
+	{{/lst}}
+	</ol>
+	
+	{{! Map works as follows, anything within the block will have a context with respect to the map
+		mappedValues is the map's reference and "name" within the block referes to mappedValues.name.
+	}}
+	
+	{{#mappedValues}}
+		<p> 
+			This is a test to show that the map {{name}} is self contained.
+			This {{context}} is chosen from the block which is named {{block_name}}.
+		</p>  
+	{{/mappedValues}}
+	
+</body>
+</html>
