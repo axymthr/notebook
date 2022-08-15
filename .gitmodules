@@ -34,3 +34,6 @@
 [submodule "coursera/android/mobilecloud-15"]
 	path = coursera/android/mobilecloud-15
 	url = git@github.com:juleswhite/mobilecloud-15.git
+[submodule "pluralsight/js/react-creating-reusable-components/ps-react-axymthr"]
+	path = pluralsight/js/react-creating-reusable-components/ps-react-axymthr
+	url = ./pluralsight/js/react-creating-reusable-components/ps-react-axymthr
