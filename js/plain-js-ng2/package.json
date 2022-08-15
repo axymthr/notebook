@@ -1,0 +1,15 @@
+{
+  "name": "plain-js-ng2",
+  "version": "1.0.0",
+  "description": "AngularJS2 Hello World in ES5 in plain JS",
+  "main": "app.js",
+  "dependencies": {
+    "angular2": "^2.0.0-alpha.44"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
