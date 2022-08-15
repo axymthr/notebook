@@ -36,4 +36,4 @@
 	url = git@github.com:juleswhite/mobilecloud-15.git
 [submodule "pluralsight/js/react-creating-reusable-components/ps-react-axymthr"]
 	path = pluralsight/js/react-creating-reusable-components/ps-react-axymthr
-	url = ./pluralsight/js/react-creating-reusable-components/ps-react-axymthr
+	url = git@github.com:axymthr/ps-react-awkshwayrd.git
