@@ -15,7 +15,3 @@ git submodule add git@github.com:kodekloudhub/certified-kubernetes-administrator
 ```
 
 For git submodules move the existing local clone to target dir, then run the above `git submodule add` cmd.
-
-```shell
-git submodule add ./pluralsight/js/react-creating-reusable-components/ps-react-axymthr pluralsight/js/react-creating-reusable-components/ps-react-axymthr
-```
