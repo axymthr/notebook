@@ -13,3 +13,5 @@ git subtree add k8s-cli master --prefix=oreilly/k8s-cli --squash
 ```
 git submodule add git@github.com:kodekloudhub/certified-kubernetes-administrator-course.git certifications/CKA/certified-kubernetes-administrator-course
 ```
+
+For git submodules move the existing local clone to target dir, then run the above `git submodule add` cmd.

@@ -31,3 +31,6 @@
 [submodule "books/ReactiveDesignPatternsCodeSamples"]
 	path = books/ReactiveDesignPatternsCodeSamples
 	url = git@github.com:ReactiveDesignPatterns/CodeSamples.git
+[submodule "coursera/android/mobilecloud-15"]
+	path = coursera/android/mobilecloud-15
+	url = git@github.com:juleswhite/mobilecloud-15.git
