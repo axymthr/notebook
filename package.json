@@ -20,19 +20,23 @@
     "redux-immutable": "^3.1.0"
   },
   "devDependencies": {
+    "babel-eslint": "^7.1.1",
     "babel-loader": "^6.3.2",
+    "babel-preset-flow": "^6.23.0",
     "babel-preset-latest": "^6.22.0",
     "babel-preset-react": "^6.23.0",
     "chai": "^3.5.0",
     "del": "^2.2.2",
     "eslint": "^3.16.1",
     "eslint-config-airbnb": "^14.1.0",
+    "eslint-plugin-flowtype": "^2.30.0",
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-jsx-a11y": "^4.0.0",
     "eslint-plugin-react": "^6.10.0",
     "gulp": "^3.9.1",
     "gulp-babel": "^6.1.2",
     "gulp-eslint": "^3.0.1",
+    "gulp-flowtype": "^1.0.0",
     "gulp-mocha": "^4.0.1",
     "mocha": "^3.2.0",
     "sinon": "^1.17.7",
@@ -42,13 +46,16 @@
   "babel": {
     "presets": [
       "latest",
-      "react"
+      "react",
+      "flow"
     ]
   },
   "eslintConfig": {
-    "extends": "airbnb",
+    "extends": ["airbnb", "plugin:flowtype/recommended"],
+    "parser": "babel-eslint",
     "plugins": [
-      "import"
+      "import",
+      "flowtype"
     ],
     "env": {
       "browser": true
@@ -56,6 +63,10 @@
     "rules": {
       "linebreak-style": [
         "off"
+      ],
+      "comma-dangle": [
+        "error",
+        "only-multiline"
       ],
       "new-cap": [
         2,
