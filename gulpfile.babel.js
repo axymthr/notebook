@@ -26,14 +26,12 @@ gulp.task('clean', () => del([
 gulp.task('build', ['lint', 'clean'], () =>
   gulp.src(paths.allSrcJs)
   .pipe(babel())
-  .pipe(gulp.dest(paths.libDir))
-);
+  .pipe(gulp.dest(paths.libDir)));
 
 gulp.task('main', ['lint', 'clean'], () =>
   gulp.src(paths.clientEntryPoint)
     .pipe(webpack(webpackConfig))
-    .pipe(gulp.dest(paths.distDir))
-);
+    .pipe(gulp.dest(paths.distDir)));
 
 gulp.task('watch', () => {
   gulp.watch(paths.allSrcJs, ['main']);
@@ -49,5 +47,4 @@ gulp.task('lint', () =>
   ])
   .pipe(eslint())
   .pipe(eslint.format())
-  // .pipe(eslint.failAfterError())
-);
+  .pipe(eslint.failAfterError()));

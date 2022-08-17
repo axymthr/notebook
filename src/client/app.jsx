@@ -17,5 +17,4 @@ ReactDOM.render(
       <BarkButton />
     </div>
   </Provider>
-  , document.querySelector('.app')
-);
+  , document.querySelector('.app'));
