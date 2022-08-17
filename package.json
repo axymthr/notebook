@@ -1,0 +1,14 @@
+{
+  "name": "js-stack-from-scratch",
+  "version": "1.0.0",
+  "description": "modern react js app",
+  "main": "index.js",
+  "author": "I319502",
+  "license": "MIT",
+  "scripts": {
+    "start": "node ."
+  },
+  "dependencies": {
+    "color": "^1.0.3"
+  }
+}
