@@ -13,38 +13,50 @@ task stringsAndTypes << {
 
 
     // TODO: Create a variable named foo and assign it the value 4.2
+    def var = 4.2
 
     // TODO: Print the value and class of foo
+    println "var is of type: ${var.class} and has value: $var"
 
     // TODO: Use string interpolation to print the square root of 127
     // HINT: http://docs.oracle.com/javase/7/docs/api/java/lang/Math.html
+    println "The square root of 127 is ${java.lang.Math.sqrt(127)}"
 
     // TODO: Assign the current date to foo and print it, along with its type
     // HINT:
     // http://docs.oracle.com/javase/7/docs/api/java/util/package-summary.html
+    def foo = new java.util.Date()
+    println "foo is now of type: ${foo.class} and has value: $foo"
 
     // TODO: Use the `substring` method to extract my name from this string
     def hello = "Hello, Jeremy.";
+    def name = hello.substring(7, 13)
 
     // TODO: Use `toUpperCase` to capitalize and print my name
+    println "${name.toUpperCase()}"
 
 }
 
 task closures << {
     // TODO: Declare a closure that takes two arguments and adds them together
     // HINT: http://www.groovy-lang.org/closures.html
+    def clos = {x, y -> x + y}
 
     // TODO: Call your closure with arguments 17 and 25, and print the result
     // Beware that something like `println addTwo 17, 25` is ambiguous
+    println clos(17, 25)
 }
 
 task lists << {
     // TODO: Declare a list containing 5 of your favorite candies
     // HINT: Try searching for "groovy list literal"
+    def candies = ["jellybean", "ice cream sandwich", "KitKat", "Honeycomb", "marshmallow"]
 
     // TODO: Create a new list of your candies in all caps
     // HINT: http://mrhaki.blogspot.ca/2010/05/groovy-goodness-use-collect-with.html
+    def upCandies = candies.collect {it.toUpperCase()}
 
     // TODO: Print each capital candy
+    upCandies.each{println it}
 
 }

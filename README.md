@@ -10,3 +10,5 @@ This course is specifically concerned with the app build process, not writing
 apps in the first place. If you're just starting out on your Android journey,
 you might want to take Udacity's [Developing Android
 Apps](https://www.udacity.com/course/ud853) course.
+origin	https://github.com/udacity/ud867.git (fetch)
+origin	https://github.com/udacity/ud867.git (push)
