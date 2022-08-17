@@ -14,4 +14,13 @@ git subtree add k8s-cli master --prefix=oreilly/k8s-cli --squash
 git submodule add git@github.com:kodekloudhub/certified-kubernetes-administrator-course.git certifications/CKA/certified-kubernetes-administrator-course
 ```
 
-For git submodules move the existing local clone to target dir, then run the above `git submodule add` cmd.
+Rewrite commit author for all commits in repo:
+```shell
+git config user.name axymthr
+git config user.email mathur.aksh@gmail.com
+git rebase --root --exec 'git commit --amend --no-edit --reset-author'
+```
+Rewrite author for last commit
+```shell
+git commit --amend --reset-author --no-edit
+```
