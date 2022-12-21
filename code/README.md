@@ -7,3 +7,13 @@ for f in *.docx.md.md; do
 mv -- "$f" "${f%.docx.md.md}.md";
 done
 ```
+
+Move all files with number pattern in nane to numbered folder e.g. day1input.txt to day1/input.txt
+```shell
+for f in *.txt; 
+do 
+d=$(echo $f | sed -E 's/(day[0-9]{1})input.txt/\1/'); 
+mkdir $d; 
+mv $f $d/input.txt;
+done
+```
