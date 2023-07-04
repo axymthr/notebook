@@ -24,3 +24,16 @@ Rewrite author for last commit
 ```shell
 git commit --amend --reset-author --no-edit
 ```
+
+## Sparse checkout
+Edit `.git/info/sparse-checkout` file or create `sparse-checkout` in the `.git/info` directory.
+Sample from ChatGPT
+```bash
+/              # Include the root directory
+/docs/         # Include the 'docs' directory
+/src/file1.txt # Include a specific file in the 'src' directory
+```
+Then run the following command to merge and update
+```bash
+git read-tree -mu HEAD
+```
