@@ -26,8 +26,16 @@ git commit --amend --reset-author --no-edit
 ```
 
 ## Sparse checkout
+```shell
+git remote add origin <repository_url>
+git config core.sparseCheckout true
+```
 Edit `.git/info/sparse-checkout` file or create `sparse-checkout` in the `.git/info` directory.
 Sample from ChatGPT
+```bash
+echo "path/to/file1" >> .git/info/sparse-checkout
+echo "path/to/directory/" >> .git/info/sparse-checkout
+```
 ```bash
 /              # Include the root directory
 /docs/         # Include the 'docs' directory
