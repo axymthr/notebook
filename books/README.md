@@ -6,5 +6,7 @@ git@github.com:nwangtw/GrokkingStreamingSystems.git
 
 https://github.com/cloudanum/50Algorithms
 
+Designing Data-Intensive Applications Literature References
+This repository accompanies the book Designing Data-Intensive Applications by Martin Kleppmann, published by O'Reilly Media.
 
 https://github.com/ept/ddia-references
