@@ -8,6 +8,10 @@ https://github.com/morlinbrot/minimal-kotlin-grpc A most minimal Gradle project 
 
 https://github.com/ripienaar/free-for-dev
 
+Skyramp https://github.com/letsramp/sample-microservices Sample cloud-first application forked from GoogleCloudPlatform/microservices-demo with added support for REST and Thrift APIs.
+
+https://github.com/GoogleCloudPlatform/microservices-demo Sample cloud-first application with 10 microservices showcasing Kubernetes, Istio, and gRPC.
+
 ### MLOps
 https://github.com/EthicalML/awesome-production-machine-learning#model-serving-and-monitoring A curated list of awesome open source libraries to deploy, monitor, version and scale your machine learning
 
