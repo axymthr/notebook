@@ -12,6 +12,9 @@ Skyramp https://github.com/letsramp/sample-microservices Sample cloud-first appl
 
 https://github.com/GoogleCloudPlatform/microservices-demo Sample cloud-first application with 10 microservices showcasing Kubernetes, Istio, and gRPC.
 
+https://github.com/rockthejvm/full-stack-typelevel-demo A demo of a full-stack Scala application with the Typelevel stack  
+
+
 ### MLOps
 https://github.com/EthicalML/awesome-production-machine-learning#model-serving-and-monitoring A curated list of awesome open source libraries to deploy, monitor, version and scale your machine learning
 
