@@ -14,6 +14,12 @@ https://github.com/GoogleCloudPlatform/microservices-demo Sample cloud-first app
 
 https://github.com/rockthejvm/full-stack-typelevel-demo A demo of a full-stack Scala application with the Typelevel stack  
 
+https://github.com/GuntherRademacher/rr
+
+https://github.com/ebarlas/java-httpserver-vthreads
+
+https://github.com/abiosoft/colima
+
 
 ### MLOps
 https://github.com/EthicalML/awesome-production-machine-learning#model-serving-and-monitoring A curated list of awesome open source libraries to deploy, monitor, version and scale your machine learning
