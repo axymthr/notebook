@@ -18,6 +18,9 @@ https://github.com/GuntherRademacher/rr
 
 https://github.com/ebarlas/java-httpserver-vthreads
 
+Implementation of the sample from REST in Practice based on Spring projects
+ https://github.com/odrotbohm/spring-restbucks
+
 https://github.com/abiosoft/colima
 
 
