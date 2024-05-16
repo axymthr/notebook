@@ -23,6 +23,10 @@ Implementation of the sample from REST in Practice based on Spring projects
 
 https://github.com/abiosoft/colima
 
+https://github.com/ministryofjustice/modernisation-platform
+
+https://github.dev/ministryofjustice/modernisation-platform
+
 
 ### MLOps
 https://github.com/EthicalML/awesome-production-machine-learning#model-serving-and-monitoring A curated list of awesome open source libraries to deploy, monitor, version and scale your machine learning
