@@ -17,6 +17,6 @@
     "typescript": "^2.3.3",
     "typings": "^2.1.1",
     "webpack": "^2.6.1",
-    "webpack-dev-server": "^2.4.5"
+    "webpack-dev-server": "^5.1.0"
   }
 }
