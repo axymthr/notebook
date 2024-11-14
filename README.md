@@ -45,3 +45,9 @@ Then run the following command to merge and update
 ```bash
 git read-tree -mu HEAD
 ```
+###### When to Use git read-tree -mu HEAD
+
+git read-tree -mu HEAD can be useful if:
+	•	You want to adjust the sparse-checkout configuration after the initial checkout.
+	•	You’ve updated .git/info/sparse-checkout to include new paths and want to apply those changes without checking out the branch again.
+In newer Git workflows, however, this command is often unnecessary. After setting up the sparse-checkout configuration and checking out the branch, Git will respect the .git/info/sparse-checkout file automatically without needing git read-tree -mu HEAD.
