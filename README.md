@@ -43,6 +43,10 @@ echo "path/to/directory/" >> .git/info/sparse-checkout
 ```
 Then run the following command to merge and update
 ```bash
+git checkout main/master
+# OR
+git git sparse-checkout reapply
+# OR
 git read-tree -mu HEAD
 ```
 ###### When to Use git read-tree -mu HEAD
