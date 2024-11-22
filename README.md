@@ -37,7 +37,7 @@ echo "path/to/file1" >> .git/info/sparse-checkout
 echo "path/to/directory/" >> .git/info/sparse-checkout
 ```
 ```bash
-/              # Include the root directory
+/              # Include the root directory UPDATE DON'T this is not actually needed 
 /docs/         # Include the 'docs' directory
 /src/file1.txt # Include a specific file in the 'src' directory
 ```
