@@ -41,6 +41,22 @@ echo "path/to/directory/" >> .git/info/sparse-checkout
 /docs/         # Include the 'docs' directory
 /src/file1.txt # Include a specific file in the 'src' directory
 ```
+Better to just run
+```
+git sparse-checkout init
+git sparse-checkout set spring code books github-repos oreilly pluralsight
+```
+No need to maually create files. Caveat: An initial
+```
+git clone --no-checkout git@github.com:axy/am.git
+```
+OR
+```
+# Fetch from the remote repository
+git fetch origin
+```
+is still needed which fetches the full repo contents anyway.
+
 Then run the following command to merge and update
 ```bash
 git checkout main/master
