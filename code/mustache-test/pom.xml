@@ -11,9 +11,9 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <spring.version>6.1.13</spring.version>
+    <spring.version>6.1.21</spring.version>
     <jetty.version>6.1.25</jetty.version>
-    <jetty.version.adv>9.4.55.v20240627</jetty.version.adv>
+    <jetty.version.adv>9.4.56.v20240826</jetty.version.adv>
     <slf4j.version>1.6.1</slf4j.version>
     <version.log4j>1.2.16</version.log4j>
     <version.scalate>1.6.1</version.scalate>

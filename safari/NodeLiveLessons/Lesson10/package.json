@@ -4,6 +4,6 @@
         "version" : "0.0.1",
         "private" : true,
         "dependencies" : {
-            "http-proxy" : "0.8.x"
+            "http-proxy" : "1.18.x"
         }
 }
