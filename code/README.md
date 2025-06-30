@@ -1,5 +1,8 @@
-The Wine Cellar application provides an example of Building a complete RESTful API in Java using JAX-RS and Jersey. Consuming these services using jQuery
-https://github.com/ccoenraets/wine-cellar-java
+# Utility scripts
+
+[obsidian_copy.md](obsidian_copy.md)
+
+---
 
 Rename all file exts in folder
 ```shell
@@ -21,3 +24,6 @@ mkdir $d;
 mv $f $d/input.txt;
 done
 ```
+
+The Wine Cellar application provides an example of Building a complete RESTful API in Java using JAX-RS and Jersey. Consuming these services using jQuery
+https://github.com/ccoenraets/wine-cellar-java
