@@ -1,0 +1,30 @@
+# Obsidian Vault Copy Configuration
+
+# Source and target vault locations (required)
+source_vault: ~/Documents/ObsidianVault1
+target_vault: ~/Documents/ObsidianVault2
+
+# Individual notes to copy (with automatic dependency resolution)
+notes:
+  # Simple format - copies to same relative path
+  - "Projects/Project A.md"
+  - "Daily Notes/2024-01-15.md"
+  
+  # Advanced format - specify target path
+  - source: "Research/Important Paper.md"
+    target: "Archive/Papers/Important Paper.md"
+
+# Folders to copy (copies all .md files recursively)
+folders:
+  # Simple format - copies to same relative path
+  - "Meeting Notes"
+  
+  # Advanced format - specify target folder
+  - source: "Personal/Journal"
+    target: "Archive/Old Journal"
+
+# Optional: Override target paths for specific files
+# Useful when dependencies should go to different locations
+target_paths:
+  "Templates/Template1.md": "System/Templates/Template1.md"
+  "Attachments/diagram.png": "Media/Images/diagram.png"
