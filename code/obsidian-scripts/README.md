@@ -111,7 +111,7 @@ python3 obsidian_vault_copy.py config.yaml
 ## How It Works
 
 ### Graph Traversal Algorithm
-Yes, this is a **graph traversal problem**. The script uses **Breadth-First Search (BFS)**:
+The script uses **Breadth-First Search (BFS)**:
 
 1. Start with notes/folders specified in config
 2. Copy the note to target vault
@@ -264,7 +264,6 @@ For large vaults (1000+ notes), expect:
 
 Possible additions:
 - Rewrite links to match new structure
-- Copy .obsidian folder settings
 - Support for Dataview queries
 - Dry-run mode to preview changes
 - Progress bar for large vaults
