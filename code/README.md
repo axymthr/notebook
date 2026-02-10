@@ -4,14 +4,30 @@
 
 ---
 
-Rename all file exts in folder
+### Brewfile split 
+[bf-split.sh](bf-split.sh) is full version
+```sh
+awk '
+  BEGIN{ nextf="Brewfile.next"; curf="Brewfile.current" }
+  /#next[[:space:]]*$/{
+      line=$0
+      sub(/[[:space:]]*#next[[:space:]]*$/, "", line)   # strip marker
+      print line >> nextf
+      next
+  }
+  { print $0 >> curf }
+' Brewfile
+```
+
+
+### Rename all file exts in folder
 ```shell
 for f in *.docx.md.md; do
 mv -- "$f" "${f%.docx.md.md}.md";
 done
 ```
 
-Move all files with number pattern in nane to numbered folder e.g. day1input.txt to day1/input.txt
+### Move all files with number pattern in nane to numbered folder e.g. day1input.txt to day1/input.txt
 ```shell
 for f in *.txt; 
 do 
