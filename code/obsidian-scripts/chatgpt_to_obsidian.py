@@ -4,8 +4,8 @@ from pathlib import Path
 import re
 
 # ---- CONFIG ----
-EXPORT_FILE = "conversations.json"
-OUTPUT_DIR = Path("ChatGPT")
+EXPORT_FILE = Path.home() / "Downloads/ChatGPT/conversations.json"
+OUTPUT_DIR = Path("~/Downloads/ChatGPT/notes").expanduser()
 OUTPUT_DIR.mkdir(exist_ok=True)
 
 def sanitize_filename(text):
@@ -35,10 +35,24 @@ for convo in data:
 
         role = message.get("author", {}).get("role")
         parts = message.get("content", {}).get("parts", [])
+        print(f"Parts structure: {parts[:2]}")
 
         if role in ("user", "assistant") and parts:
-            text = "\n".join(parts)
-            reasoning_blocks.append(f"### {role.capitalize()}\n{text}\n")
+            text_parts = []
+            for part in parts:
+                if isinstance(part, str):
+                    text_parts.append(part)
+                elif isinstance(part, dict):
+                    # Handle different content types
+                    if part.get("content_type") == "text":
+                        text_parts.append(part.get("text", ""))
+                    elif part.get("content_type") == "image_asset_pointer":
+                        text_parts.append("[Image]")
+                    # Add other content types as needed
+
+            if text_parts:  # Only add if there's actual text content
+                text = "\n".join(text_parts)
+                reasoning_blocks.append(f"### {role.capitalize()}\n{text}\n")
 
     md = f"""---
 type: chatgpt
