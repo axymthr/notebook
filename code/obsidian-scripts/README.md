@@ -269,6 +269,14 @@ Possible additions:
 - Progress bar for large vaults
 - Exclude patterns (ignore certain folders/files)
 
+
+**For macOS / Linux (Bash):**
+You can use `grep` to find the tag and `xargs` to pipe the resulting file paths directly into the `cp` (copy) command.
+```shell
+grep -rl --include=\*.md "#extract" /path/to/vault1 | xargs -I {} cp {} /path/to/vault2/
+```
+
+
 ## License
 
 MIT License - Use freely for personal or commercial projects.
